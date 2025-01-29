@@ -1,0 +1,19 @@
+The following CSS code snippet demonstrates the corrected version:
+
+```css
+.element {
+  width: calc(100% - 10px); /* Correct: Space between 100% and - */
+}
+
+/*Example of correct nested calc()*/
+.element2 {
+  width: calc(50% - calc(10px + 5%)); /*Correct: Uses proper spacing and consistent units*/
+}
+
+/*Example of handling different units within calc()*/
+.element3 {
+  width: calc(50vw - 10px); /*Correct: Mixes viewport width units and pixels*/
+}
+```
+
+This corrected code ensures that the calculation will be performed correctly across different browsers.  The spaces around the minus sign are crucial for the calculation to be properly interpreted.  Pay attention to units used within nested `calc()` functions to maintain consistency and correctness.
