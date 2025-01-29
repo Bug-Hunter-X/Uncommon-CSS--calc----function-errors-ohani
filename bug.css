@@ -1,0 +1,15 @@
+The following CSS code snippet demonstrates a common error that arises when using the `calc()` function: 
+
+```css
+.element { 
+  width: calc(100% - 10px); 
+}
+```
+
+This code intends to set the width of the element to 100% of its container minus 10 pixels. However, if the `10px` is not followed by a space, several browsers will not correctly interpret this calculation, and the `width` may default to `100%`.
+
+The space between the percentage and the subtracted value is crucial for proper interpretation.
+
+Another instance of this can occur when nesting `calc()` functions without proper spacing or when using units inconsistently within the `calc()` function.
+
+Another less common error is the usage of `calc()` in combination with properties that aren't numerically based or are not compatible with the operators used within `calc()`. For instance, you can't use `calc()` to compute values that include colors, strings, or properties like `auto` directly within the formula.
